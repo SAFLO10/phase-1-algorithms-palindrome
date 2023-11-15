@@ -1,9 +1,12 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const lowercaseWord = word.toLowerCase();
+  const reversedWord = lowercaseWord.split('').reverse().join('');
+return lowercaseWord === reversedWord;
 }
 
 /* 
-  Add your pseudocode here
+  isPalindrome should return true if the string is a palindrome
+  and return false if not 
 */
 
 /*
